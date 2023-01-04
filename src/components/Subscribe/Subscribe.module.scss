@@ -1,0 +1,78 @@
+.subscribe {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  display: flex;
+
+  gap: 80px;
+}
+
+.container {
+  padding: 70px 60px;
+  display: flex;
+  background: #3b3b3b;
+  border-radius: 20px;
+
+  gap: 70px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.title {
+
+  font-weight: 600;
+  font-size: 38px;
+}
+
+.info {
+  font-size: 22px;
+}
+
+.subscribeForm {
+  position: relative;
+  display: flex;
+
+  .email {
+    flex-grow: 1;
+    justify-self: left;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 20px;
+    text-align: left;
+    color: #2b2b2b;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+  }
+
+  .button {
+    position: absolute;
+    left: 250px;
+    padding: 20px 50px;
+    display: flex;
+    gap: 12px;
+    background: #a259ff;
+    border-radius: 20px;
+
+    .subIcon {
+      width: 20px;
+    }
+
+    .subText {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}

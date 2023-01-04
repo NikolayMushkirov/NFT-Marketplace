@@ -1,0 +1,195 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.timer {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-start;
+  gap: 30px;
+  padding: 30px;
+  background: rgba(59, 59, 59, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  .timerInfo {
+    font-family: "Space Mono";
+    font-size: 13px;
+  }
+
+  .timerContainer {
+    display: flex;
+    column-gap: 38px;
+  }
+
+  .timerBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:not(:last-child)::after {
+      content: ":";
+      position: absolute;
+      top: 5px;
+      left: 60px;
+      font-size: 38px;
+    }
+
+    .unitOfTime {
+      font-family: "Space Mono";
+      font-weight: 700;
+      font-size: 38px;
+    }
+    .timerTitle {
+      font-family: "Space Mono";
+      font-size: 13px;
+    }
+  }
+  .bidButton {
+    padding: 19px 80.5px;
+    background: #a259ff;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.titleBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .title {
+    font-weight: 600;
+    font-size: 51px;
+  }
+  .subtitle {
+    font-size: 22px;
+    color: #858584;
+  }
+}
+
+.authorBox {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  .authorTitle {
+    font-weight: 700;
+    font-size: 22px;
+    color: #858584;
+  }
+
+  .authorInfoBox {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    .name {
+      font-weight: 600;
+      font-size: 22px;
+    }
+  }
+}
+
+.descriptionBox {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  .descrTitle {
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 22px;
+    color: #858584;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 605px;
+    font-size: 22px;
+    line-height: 160%;
+  }
+}
+
+.detailsBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .detailsTitle {
+    font-weight: 700;
+    font-size: 22px;
+    color: #858584;
+  }
+  .viewBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .info {
+    font-size: 22px;
+  }
+}
+
+.tagsBox {
+  width: 605px;
+  display: grid;
+  gap: 20px;
+
+  .tagsTitle {
+    grid-row-start: 1;
+    font-weight: 600;
+    font-size: 22px;
+    color: #858584;
+  }
+  .tag {
+    grid-row-start: 2;
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    background: #3b3b3b;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.otherArtBox {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.otherTitleBox {
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+
+  .otherTitle {
+    font-size: 38px;
+    font-weight: 600;
+  }
+
+}
+
+.artistPageLink {
+  padding: 19px 50px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border: 2px solid #a259ff;
+  border-radius: 20px;
+}

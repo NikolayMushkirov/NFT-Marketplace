@@ -1,0 +1,41 @@
+
+.creators {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.titleBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .title {
+        font-size: 38px;
+      }
+
+      .info {
+        font-size: 22px;
+      }
+}
+
+
+
+.button {
+  padding: 19px 50px;
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-end;
+  gap: 12px;
+  border: 2px solid #a259ff;
+  border-radius: 20px;
+
+  .buttonText {
+    font-weight: 600;
+  }
+}

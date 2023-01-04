@@ -1,0 +1,79 @@
+.hero {
+
+
+}
+
+.container {
+  width: 1050px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  padding: 80px 0;
+  gap: 30px;
+}
+
+.infoContainer {
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title {
+  font-size: 67px;
+}
+
+.info {
+  font-size: 22px;
+}
+
+.button {
+  display: flex;
+  gap: 12px;
+  width: 224px;
+  padding: 19px 50px;
+  background: #a259ff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.additionalInfoBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  .additionalInfo {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .additionalInfoAmount {
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 28px;
+  }
+}
+
+.nftImageBox {
+    display: flex;
+    flex-direction: column;
+
+
+   .nftArtistBox {
+        padding: 22px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: #3B3B3B;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .nftTitle {
+        font-size: 22px;
+    }
+    .artistCard {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+}
+

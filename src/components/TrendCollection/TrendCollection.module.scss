@@ -1,0 +1,74 @@
+.trendCollection {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.infoBox {
+
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 10px;
+
+  .title {
+    font-size: 38px;
+  }
+  .info {
+    font-size: 22px;
+  }
+}
+
+.imgContainer {
+  display: flex;
+  gap: 30px;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .primaryImg {
+    width: 330px;
+    flex-grow: 3;
+  }
+
+  .imagesBox {
+    display: flex;
+    gap: 15px;
+    .img {
+      width: 100px;
+    }
+    .number {
+      padding: 32.5px 15px;
+      background: #a259ff;
+      border-radius: 20px;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .author {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .authorTitle {
+    font-size: 22px;
+  }
+
+  .avatarBox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    .avatar {
+      width: 24px;
+    }
+  }
+
+
+}

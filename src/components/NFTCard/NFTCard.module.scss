@@ -1,0 +1,58 @@
+.NFTCard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.img {
+  min-width: 100%;
+}
+
+.wrapper {
+  padding: 20px 30px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background: #3b3b3b;
+}
+
+.titleBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.authorBox {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  .authorAvatar {
+    width: 24px;
+  }
+
+  .authorName {
+    font-family: "Space Mono";
+  }
+}
+
+.priceBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .priceTitle {
+    font-family: "Space Mono";
+    font-size: 13px;
+    color: #858584;
+  }
+  .price {
+    font-family: "Space Mono";
+  }
+}

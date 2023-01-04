@@ -1,0 +1,138 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.placeholder {
+  padding-bottom: 50px;
+}
+
+.wrapper {
+  position: relative;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+
+  .avatar {
+    position: absolute;
+    top: -120px;
+    left: 270px;
+    border: 2px solid #2b2b2b;
+    border-radius: 30px;
+  }
+
+  .artistWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .title {
+    font-weight: 600;
+    font-size: 51px;
+  }
+  .subtitle {
+    font-family: "Space Mono";
+    font-weight: 500;
+    font-size: 22px;
+    color: #858584;
+  }
+  .infoText {
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .statBox {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+
+    .boldInfoText {
+      font-family: "Space Mono";
+      font-weight: 700;
+      font-size: 28px;
+    }
+  }
+
+  .bioBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .linksBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .linksWrapper {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  .followButtons {
+    display: flex;
+    gap: 20px;
+
+    .hashButton {
+      padding: 20px 20.5px;
+      display: flex;
+      gap: 12px;
+      background: #a259ff;
+      border-radius: 20px;
+    }
+    .followButton {
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border: 2px solid #a259ff;
+      border-radius: 20px;
+    }
+  }
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+
+  .tab {
+    padding: 14.5px 180px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 600;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .tabActive {
+    position: relative;
+    padding: 14.5px 180px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 600;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .tabActive ::after {
+    content: "";
+    width: 70%;
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    border-bottom: 1px solid #858584;
+  }
+
+  .amount {
+    padding: 5px 10px;
+    font-family: "Space Mono";
+    font-size: 16px;
+    background: #3b3b3b;
+    border-radius: 20px;
+  }
+}
+.cardsContainer {
+  padding: 60px 0;
+}

@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.box {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.titleBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .title {
+    font-weight: 600;
+    font-size: 51px;
+  }
+  .subTitle {
+    font-size: 22px;
+  }
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .inputBox {
+    position: relative;
+
+    .icon {
+      position: absolute;
+      top: 15px;
+      left: 25px;
+    }
+    .input {
+      width: 330px;
+      padding: 12px 0;
+      padding-left: 52px;
+      background: #ffffff;
+      border: 1px solid #858584;
+      border-radius: 20px;
+      font-size: 16px;
+      line-height: 140%;
+      color: #2b2b2b;
+    }
+  }
+}
+
+.button {
+  width: 330px;
+  padding: 12px 104px;
+  background: #a259ff;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}

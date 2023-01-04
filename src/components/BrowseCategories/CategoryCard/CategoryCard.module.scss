@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.imageBox {
+    position: relative;
+    width: 240px;
+    border-radius: 20px;
+}
+
+.backgorund {
+    filter: blur(7.5px);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+}
+
+.name {
+    padding: 20px 30px 25px;
+    font-size: 22px;
+    background: #3B3B3B;
+    border-radius: 20px;
+}

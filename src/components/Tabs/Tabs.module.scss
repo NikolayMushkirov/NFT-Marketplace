@@ -1,0 +1,45 @@
+.tab {
+  padding: 14.5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-weight: 600;
+  font-size: 22px;
+  cursor: pointer;
+  color: #858584;
+}
+
+.tabActive {
+  position: relative;
+  padding: 14.5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-weight: 600;
+  font-size: 22px;
+  cursor: pointer;
+
+  .amount {
+    background: #858584;
+  }
+
+}
+
+.tabActive::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  border-bottom: 1px solid #858584;
+}
+.amount {
+  padding: 5px 10px;
+  font-family: "Space Mono";
+  font-size: 16px;
+  background: #3b3b3b;
+  border-radius: 20px;
+
+}
