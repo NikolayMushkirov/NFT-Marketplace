@@ -3,11 +3,11 @@ import React, { useState } from "react";
 import Header from "../../components/Header/Header";
 import Table from "../../components/Table/Table";
 import Footer from "../../components/Footer/Footer";
+import Tabs from "../../components/Tabs/Tabs";
 
 import { namesData, rankingsTabsData } from "../../data/data";
 
 import styles from "./RankingsPage.module.scss";
-import Tabs from "../../components/Tabs/Tabs";
 
 const RankingsPage = () => {
   const [activeTab, setActiveTab] = useState('1');
@@ -17,7 +17,7 @@ const RankingsPage = () => {
       setActiveTab(e.target.id);
     }
   };
-  console.log(activeTab);
+
   return (
     <>
       <Header />
@@ -29,12 +29,6 @@ const RankingsPage = () => {
           </p>
         </div>
 
-        {/* <div className={styles.tabs}>
-          <div className={`${styles.tab} ${styles.tabActive}`}>Today</div>
-          <div className={styles.tab}>This Week</div>
-          <div className={styles.tab}>This Month</div>
-          <div className={styles.tab}>All Time</div>
-        </div> */}
         <div className={styles.tabs}>
           <Tabs
             tabsData={rankingsTabsData}

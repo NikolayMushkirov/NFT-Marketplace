@@ -10,16 +10,19 @@
     border-radius: 20px;
 }
 
-.backgorund {
-    filter: blur(7.5px);
+.background {
+  filter: blur(7.5px);
 }
+
 
 .icon {
   position: absolute;
   top: 50%;
   left: 50%;
   transform:translate(-50%, -50%);
+  cursor: pointer;
 }
+
 
 .name {
     padding: 20px 30px 25px;

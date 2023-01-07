@@ -10,6 +10,7 @@
   height: 90vh;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   gap: 300px;
   background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%);
 }
@@ -51,47 +52,3 @@
   }
 }
 
-.timer {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: flex-end;
-  padding: 30px;
-  background: rgba(59, 59, 59, 0.5);
-  backdrop-filter: blur(5px);
-  border-radius: 20px;
-  .timerInfo {
-    font-family: "Space Mono";
-    font-size: 13px;
-  }
-
-  .timerContainer {
-    display: flex;
-    column-gap: 38px;
-  }
-
-  .timerBox {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    &:not(:last-child)::after {
-      content: ":";
-      position: absolute;
-      top: 5px;
-      left: 60px;
-      font-size: 38px;
-    }
-
-    .unitOfTime {
-      font-family: "Space Mono";
-      font-weight: 700;
-      font-size: 38px;
-    }
-    .timerTitle {
-      font-family: "Space Mono";
-      font-size: 13px;
-    }
-  }
-}

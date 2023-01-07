@@ -14,21 +14,33 @@ import copy from "../../assets/icons/artist/Copy.svg";
 import plus from "../../assets/icons/artist/Plus.svg";
 import animaKidAvatar from "../../assets/icons/artist/animaKidRect.svg";
 
-import { AnimaKidCards } from "../../data/data";
+import { AnimaKidCards, artistPageTabsData } from "../../data/data";
 
 import styles from "./ArtistPage.module.scss";
+import Tabs from "../../components/Tabs/Tabs";
 
 const ArtistPage = () => {
+  const [activeTab, setActiveTab] = useState("1");
+
+  const handleActiveTab = (e) => {
+    if (e.target.id !== activeTab) {
+      setActiveTab(e.target.id);
+    }
+  };
+
   return (
     <>
       <Header />
 
-      <div className={styles.container}>
+      <div className={styles.background}>
         <img
           src={placeholder}
           alt="placeholder"
           className={styles.placeholder}
         />
+      </div>
+
+      <div className={styles.container}>
         <div className={styles.wrapper}>
           <img
             src={animaKidAvatar}
@@ -102,22 +114,15 @@ const ArtistPage = () => {
         </div>
 
         <div className={styles.tabs}>
-          <div className={styles.tabActive}>
-            Created
-            <span className={styles.amount}>302</span>
-          </div>
-          <div className={styles.tab}>
-            Owned
-            <span className={styles.amount}>67</span>
-          </div>
-          <div className={styles.tab}>
-            Collection
-            <span className={styles.amount}>4</span>
-          </div>
+          <Tabs
+            tabsData={artistPageTabsData}
+            handleActiveTab={handleActiveTab}
+            activeTab={activeTab}
+          />
         </div>
 
         <div className={styles.cardsContainer}>
-          <NFTCard cardsData={AnimaKidCards}/>
+          <NFTCard cardsData={AnimaKidCards} />
         </div>
       </div>
       <Footer />

@@ -688,3 +688,20 @@ export const marketplaceTabsData = [
         amount: 67,
     }
 ]
+export const artistPageTabsData = [
+    {
+        tabName: 'Created',
+        id: '1',
+        amount: 302,
+    },
+    {
+        tabName: 'Owned',
+        id: '2',
+        amount: 67,
+    },
+    {
+        tabName: 'Collection',
+        id: '3',
+        amount: 4,
+    }
+]

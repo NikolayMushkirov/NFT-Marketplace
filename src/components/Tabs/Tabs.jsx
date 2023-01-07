@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Tabs.module.scss";
 
-const Tabs = ({ tabsData, handleActiveTab, activeTab, tabsAmount}) => {
+const Tabs = ({ tabsData, handleActiveTab, activeTab, }) => {
   return (
     <>
 

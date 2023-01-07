@@ -1,8 +1,11 @@
 import React from "react";
-import styles from "./NFTHighlight.module.scss";
+
+import Timer from "../Timer/Timer";
+
 import shroomie from "../../assets/avatars/shroomie.svg";
 import eye from "../../assets/icons/Eye.svg";
-import backgroundNFT from "../../assets/img/NFT Highlight.png";
+import styles from "./NFTHighlight.module.scss";
+
 const NFTHighlight = () => {
   return (
     <section className={styles.NFTHighlight}>
@@ -19,25 +22,7 @@ const NFTHighlight = () => {
           </div>
         </div>
 
-        <div className={styles.timer}>
-          <p className={styles.timerInfo}>Auction ends in:</p>
-          <div className={styles.timerContainer}>
-            <div className={styles.timerBox}>
-              <span className={styles.unitOfTime}>59</span>
-              <span className={styles.timerTitle}>Hours</span>
-            </div>
-
-            <div className={styles.timerBox}>
-              <span className={styles.unitOfTime}>59</span>
-              <span className={styles.timerTitle}>Minutes</span>
-            </div>
-
-            <div className={styles.timerBox}>
-              <span className={styles.unitOfTime}>59</span>
-              <span className={styles.timerTitle}>Seconds</span>
-            </div>
-          </div>
-        </div>
+        <Timer deadline="December, 31, 2023"/>
       </div>
     </section>
   );

@@ -20,6 +20,7 @@
   font-weight: 600;
   font-size: 22px;
   cursor: pointer;
+  transition:all 0.3s;
 
   .amount {
     background: #858584;
@@ -34,6 +35,8 @@
   top: 60px;
   left: 10px;
   border-bottom: 1px solid #858584;
+
+
 }
 .amount {
   padding: 5px 10px;

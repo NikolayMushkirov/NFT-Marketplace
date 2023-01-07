@@ -1,26 +1,31 @@
 import React from "react";
+
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import styles from "./NFTPage.module.scss";
+import Timer from "../../components/Timer/Timer";
+import NFTCard from "../../components/NFTCard/NFTCard";
+
+import { OrbitianCards } from "../../data/data";
 
 import placeholder from "../../assets/img/NFT page/placeholder.png";
 import globeIcon from "../../assets/icons/Globe.svg";
 import orbitian from "../../assets/avatars/Orbitian.svg";
-import arrow from '../../assets/icons/ArrowRight.svg'
-import NFTCard from "../../components/NFTCard/NFTCard";
+import arrow from "../../assets/icons/ArrowRight.svg";
 
-import { OrbitianCards } from "../../data/data";
+import styles from "./NFTPage.module.scss";
 
 const NFTPage = () => {
   return (
     <>
       <Header />
-      <div className={styles.container}>
+      <div className={styles.background}>
         <img
           src={placeholder}
           alt="placeholder"
           className={styles.placeholder}
         />
+      </div>
+      <div className={styles.container}>
         <div className={styles.wrapper}>
           <div className={styles.infoBox}>
             <div className={styles.titleBox}>
@@ -40,26 +45,24 @@ const NFTPage = () => {
               <span className={styles.descrTitle}>Description</span>
               <p className={styles.description}>
                 <p className={styles.paragraph}>
-                The Orbitians is a collection of 10,000 unique NFTs on the
-                Ethereum blockchain.
+                  The Orbitians is a collection of 10,000 unique NFTs on the
+                  Ethereum blockchain.
                 </p>
                 <p className={styles.paragraph}>
-                There are all sorts of beings in the NFT
-                Universe. The most advanced and friendly of the bunch are
-                Orbitians.
+                  There are all sorts of beings in the NFT Universe. The most
+                  advanced and friendly of the bunch are Orbitians.
                 </p>
                 <p className={styles.paragraph}>
-                They live in a metal space machines, high up in the
-                sky and only have one foot on Earth. These Orbitians are a
-                peaceful race, but they have been at war with a group of
-                invaders for many generations. The invaders are called
-                Upside-Downs, because of their inverted bodies that live on the
-                ground, yet do not know any other way to be. Upside-Downs
-                believe that they will be able to win this war if they could
-                only get an eye into Orbitian territory, so they've taken to
-                make human beings their target.
+                  They live in a metal space machines, high up in the sky and
+                  only have one foot on Earth. These Orbitians are a peaceful
+                  race, but they have been at war with a group of invaders for
+                  many generations. The invaders are called Upside-Downs,
+                  because of their inverted bodies that live on the ground, yet
+                  do not know any other way to be. Upside-Downs believe that
+                  they will be able to win this war if they could only get an
+                  eye into Orbitian territory, so they've taken to make human
+                  beings their target.
                 </p>
-
               </p>
             </div>
 
@@ -91,44 +94,24 @@ const NFTPage = () => {
               <span className={styles.tag}>Moon</span>
             </div>
           </div>
-          <div className={styles.timer}>
-          <p className={styles.timerInfo}>Auction ends in:</p>
-          <div className={styles.timerContainer}>
-            <div className={styles.timerBox}>
-              <span className={styles.unitOfTime}>59</span>
-              <span className={styles.timerTitle}>Hours</span>
-            </div>
-
-            <div className={styles.timerBox}>
-              <span className={styles.unitOfTime}>59</span>
-              <span className={styles.timerTitle}>Minutes</span>
-            </div>
-
-            <div className={styles.timerBox}>
-              <span className={styles.unitOfTime}>59</span>
-              <span className={styles.timerTitle}>Seconds</span>
-            </div>
-          </div>
-          <div className={styles.bidButton}>Place Bid</div>
-        </div>
+          <Timer deadline="December, 31, 2023"/>
         </div>
 
         <div className={styles.otherArtBox}>
           <div className={styles.otherTitleBox}>
-          <h2 className={styles.otherTitle}>More from this artist</h2>
-          <a className={styles.artistPageLink}>
-            <img src= {arrow} alt="arrow" className={styles.arrowIcon} />
-            Go To Artist Page
-          </a>
-
+            <h2 className={styles.otherTitle}>More from this artist</h2>
+            <a className={styles.artistPageLink} href = 'artist'>
+              <img src={arrow} alt="arrow" className={styles.arrowIcon} />
+              Go To Artist Page
+            </a>
           </div>
 
           <div className={styles.otherCardsBox}>
-              <NFTCard cardsData = {OrbitianCards}/>
+            <NFTCard cardsData={OrbitianCards}  />
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

@@ -13,10 +13,10 @@ const TopCreators = () => {
               Checkout Top Rated Creators on the NFT Marketplace
             </p>
           </div>
-          <div className={styles.button}>
+          <a className={styles.button} href = 'rankings'>
             <img className={styles.rocketIcon} src={rocketIcon} alt="rocket" />
             <span className={styles.buttonText}>View Rankings</span>
-          </div>
+          </a>
         </div>
 
         <CreatorCard />
