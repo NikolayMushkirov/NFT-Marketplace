@@ -1,8 +1,13 @@
 import React from "react";
-import styles from "./DiscoverNFT.module.scss";
-import eye from "../../assets/icons/Eye.svg";
-import { cardsData } from "../../data/data";
+
 import NFTCard from "../NFTCard/NFTCard";
+
+import { cardsData } from "../../data/data";
+
+import eye from "../../assets/icons/Eye.svg";
+
+import styles from "./DiscoverNFT.module.scss";
+
 const DiscoverNFT = () => {
   return (
     <>

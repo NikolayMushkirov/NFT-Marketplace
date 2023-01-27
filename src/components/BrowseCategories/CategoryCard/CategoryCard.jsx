@@ -1,7 +1,7 @@
 import React from "react";
 import { categoriesData } from "../../../data/data";
 import styles from "./CategoryCard.module.scss";
-const CategoryCard = ({  changeFilter }) => {
+const CategoryCard = () => {
   return (
     <>
       {categoriesData.map((category) => (
@@ -11,14 +11,8 @@ const CategoryCard = ({  changeFilter }) => {
               className={styles.background}
               src={category.background}
               alt="background"
-              onMouseOver={(e) => changeFilter(e)}
-              onMouseOut={(e) => changeFilter(e)}
             />
-            <img
-              className={styles.icon}
-              src={category.icon}
-              alt="icon"
-            />
+            <img className={styles.icon} src={category.icon} alt="icon" />
           </div>
 
           <div className={styles.name}>{category.name} </div>

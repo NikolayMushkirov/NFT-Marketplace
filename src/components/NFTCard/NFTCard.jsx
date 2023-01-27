@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./NFTCard.module.scss";
 
-import { AnimaKidCards } from "../../data/data";
+
 const NFTCard = ({cardsData}) => {
   return (
     <div className={styles.NFTCard}>
